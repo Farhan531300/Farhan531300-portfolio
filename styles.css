@@ -1,0 +1,200 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set black background */
+body {
+    background-color: #000; /* Solid black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc; /* Light gray text for subtlety */
+    margin-bottom: 20px;
+}
+
+/* Navigation buttons */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Section styling */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+    border-bottom: 2px solid #fff; /* White border */
+    padding-bottom: 10px;
+}
+
+/* Skills section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* White text */
+}
+
+/* Projects section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+}
+
+.project p {
+    color: #ccc; /* Light gray text */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000; /* Black text */
+    background: #fff; /* White background */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project a:hover {
+    background: #ddd; /* Light gray background on hover */
+}
+
+/* Contact form */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* White text */
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #ccc; /* Light gray placeholder text */
+}
+
+form button {
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #ddd; /* Light gray background on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    margin-top: 40px;
+}
+
+footer p {
+    color: #ccc; /* Light gray text */
+}
+
+footer .social-links a {
+    color: #fff; /* White text */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #1e3c72; /* Blue text on hover */
+}
+
+/* Fade-in animation */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #ddd; /* Light gray background on hover */
+}
